@@ -2,6 +2,8 @@ import { combineReducers } from 'redux';
 
 function peliculasReducer(state = [], action) {
   switch (action.type) {
+    case "SAVE":
+      return action.movies;
     case "UPDATE":
       return state.map((movie, index) => action.index === index ? action.movie : movie);
     case "CREATE":
@@ -24,6 +26,7 @@ function currentReducer(state = null, action) {
     case "NEW":
     case "CREATE":
     case "DELETE":
+    case "SAVE":
       return null;
     default:
       return state
@@ -41,6 +44,7 @@ function viewReducer(state = null, action) {
     case "UPDATE":
     case "CREATE":
     case "DELETE":
+    case "SAVE":
       return null;
     default:
       return state

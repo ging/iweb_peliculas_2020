@@ -26,3 +26,4 @@ div.movie div.movie-img {width: 200px; height: auto; min-height: 200px; cursor: 
 div.movie div.movie-img img {width: 100%; height: auto;}
 div.movie div.title {text-align: center; overflow: hidden; text-overflow: ellipsis; width: 200px; white-space: nowrap; }
 div.field {color: var(--primary); text-transform: uppercase; font-size: 12px;}
+.spinner {width: 300px;margin:auto; display: block;}

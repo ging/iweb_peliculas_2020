@@ -25,3 +25,7 @@ export function newMovie(){
 export function deleteMovie(index){
 	return {type: "DELETE", index};
 }
+
+export function saveMovies(movies){
+	return {type: "SAVE", movies};
+}

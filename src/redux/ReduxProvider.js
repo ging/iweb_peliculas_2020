@@ -1,4 +1,3 @@
-import { misPeliculasIniciales } from '../constants/constants';
 import { Provider } from 'react-redux';
 import GlobalState from './reducers';
 import { createStore } from 'redux';
@@ -10,7 +9,7 @@ export default class ReduxProvider extends React.Component {
   constructor(props) {
     super(props);
     this.initialState = { 
-      peliculas: misPeliculasIniciales,
+      peliculas: [],
       current: null,
       view: null
     };
