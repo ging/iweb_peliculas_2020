@@ -11,7 +11,6 @@ import {postAPI, getAPI, updateAPI} from "../api";
 class App extends React.Component {
 	constructor(props) {
 		super(props);
-
 		this.state = {
 			loading: true
 		};
